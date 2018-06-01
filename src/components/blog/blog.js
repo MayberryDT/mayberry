@@ -22,7 +22,6 @@ class Blog extends Component {
           console.log(this.state.posts);
         })
         .catch(error => console.log(error));
-        console.log("I'm in componentDidMount Blog.js");
     }
   
     render() {

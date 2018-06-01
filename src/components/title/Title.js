@@ -9,7 +9,7 @@ const title = (props) => {
             <div className={classes.wrap} id="title">
                     <img 
                         src={selfPicture} 
-                        alt='My Picture'
+                        alt='profile'
                         className={[classes.colNarrow, classes.profileImg].join(' ')} />
                 <div className={classes.colWide}>
                     <h1>Tyler Mayberry</h1>

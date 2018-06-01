@@ -7,7 +7,7 @@ class ArticlePreview extends Component {
     if (string.indexOf("&#8217;") >= 0) {
       return this.removeUnicode(string.replace("&#8217;", "'"));
     } else {
-      return string.replace("<p>", "").replace("[&hellip;]</p>", "...");
+      return string.replace("<p>", "").replace("[&hellip;]</p>", "...").replace("</p>", "...");
     }
   }
 
@@ -20,6 +20,7 @@ class ArticlePreview extends Component {
           <a href={"/blog/" + this.props.post.ID}>
             {this.props.post.featured_image ? (
               <img
+                className={classes.webpic}
                 alt="article header"
                 src={this.props.post.featured_image}
               />
